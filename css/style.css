@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #090612;
+    color: #ffffff;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #10091c;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #39ff14;
+}
+
+#logo img {
+    width: 170px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+#titulo h1 {
+    color: #39ff14;
+    font-size: 42px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+#titulo p {
+    color: #c77dff;
+    font-size: 19px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+
+nav {
+    background-color: #160d25;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #39ff14;
+}
+
+/* CONTEÚDO */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    color: #c77dff;
+    font-size: 30px;
+    margin-bottom: 18px;
+    text-shadow: 0 0 8px #7b2cbf;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* INTRODUÇÃO */
+
+#introducao {
+    background-color: #140c20;
+    padding: 35px;
+    border: 2px solid #7b2cbf;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(123, 44, 191, 0.3);
+}
+
+/* PRODUTOS */
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+#produtos h2 {
+    width: 100%;
+}
+
+/* CARDS */
+
+.card {
+    width: 30%;
+    min-width: 280px;
+    background-color: #140c20;
+    color: #ffffff;
+    padding: 18px;
+    border: 2px solid #7b2cbf;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #39ff14;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
+}
+
+.card img {
+    width: 100%;
+    max-width: 500px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #39ff14;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* ESTOQUE */
+
+#estoque {
+    background-color: #140c20;
+    padding: 30px;
+    border: 2px solid #7b2cbf;
+    border-radius: 12px;
+}
+
+#estoque ul {
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+#estoque li {
+    background-color: #1d1030;
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 14px;
+    border-left: 5px solid #39ff14;
+    border-radius: 6px;
+    list-style-position: inside;
+}
+
+/* VENDAS */
+
+#vendas {
+    background-color: #140c20;
+    padding: 30px;
+    border: 2px solid #39ff14;
+    border-radius: 12px;
+}
+
+/* TABELA */
+
+#tabela {
+    background-color: #140c20;
+    padding: 30px;
+    border: 2px solid #7b2cbf;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #7b2cbf;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 17px;
+}
+
+td {
+    background-color: #10091c;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #4b2770;
+}
+
+tr:hover td {
+    background-color: #251238;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #10091c;
+    text-align: center;
+    padding: 25px;
+    border-top: 3px solid #39ff14;
+}
+
+footer p {
+    color: #c77dff;
+    font-size: 16px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
